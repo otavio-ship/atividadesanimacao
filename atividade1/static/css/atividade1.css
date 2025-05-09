@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: white;
+    position: relative;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    background-color: #1a3082; /* azul escuro */
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .inner-box {
+    width: 140px;
+    height: 25px;
+    background-color: #b5ffe1; /* verde claro */
+    border-radius: 4px;
+  }
+  
+  .circle {
+    width: 60px;
+    height: 60px;
+    background-color: #d01818; /* vermelho */
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            animation-name: piscar;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction:alternate ;
+  }
+
+  @keyframes piscar{
+            0% { background-color: red;
+            left: 0px; }
+            25% { background-color: rgb(255, 0, 0); }
+            50% { background-color: rgb(255, 0, 0);
+            left: 3000px; 
+            top: 0px;}
+            100% { background-color: rgb(255, 0, 0); 
+            left: 300px;
+            top: 300px;
+            width: 300px;
+            height: 300px; }
+            
